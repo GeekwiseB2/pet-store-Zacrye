@@ -12,12 +12,16 @@
   color: #61aee6;
   font-weight: bold;
   font-size: 22px;
-  padding: 20px;
 }
 
-/*.header {
-  max-height: 100px;
-}*/
+.the-brand{
+  padding-top: 15px;
+  display: inline-flex;
+}
+
+.the-pills{
+  padding-top: 25px;
+}
 
 .jumbotron{
   background-image: url(../img/hero.jpg);
@@ -80,4 +84,40 @@ footer .borderl{
 footer .copyright{
   color: #505050;
   font-size: 18px;
+}
+
+table{
+  font-size: 16px;
+}
+
+.contact-content{
+  padding-top: 30px;
+}
+
+.map {
+  position: relative;
+  padding-bottom: 35%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media screen and (max-width:767px) {
+  .contact-content h3, .contact-content p{
+    text-align: center;
+  }
+
+  .the-brand{
+  }
+
+  .header-center768{
+     display: flex;
+     width: 100%;
+  }
 }
